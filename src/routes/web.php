@@ -52,7 +52,10 @@ $posts = [
 // Route::view('/contact', 'home.contact')
 //     ->name('home.contact');
 
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', function () {
+    return redirect()->route('home.index');
+});
+
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
 Route::get('/secret', [HomeController::class, 'secret'])
