@@ -1,0 +1,39 @@
+# Version Control
+.git
+.gitignore
+.gitattributes
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Local Package Dependencies
+vendor/
+node_modules/
+
+# Laravel Framework Caches & Local Logs
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+storage/logs/*
+!.gitkeep
+
+# Testing & IDEs
+.phpunit.result.cache
+.idea/
+.vscode/
+
+# Docker Configs
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Package Manager Logs
+npm-debug.log
+yarn-error.log
+
+# Util tools
+Makefile
