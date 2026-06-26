@@ -13,13 +13,13 @@ npm-run-watch:
 	docker compose run --rm npm run watch
 
 composer-install:
-	docker compose exec php composer install
+	docker compose run --rm composer install
 
 composer-install-no-dev:
-	docker compose exec php composer install --no-dev
+	docker compose run --rm composer install --no-dev
 
 composer-dump-autoload:
-	docker compose exec php composer dump-autoload
+	docker compose run --rm composer dump-autoload
 
 # Call any php artisan cmd
 #   ex: make artisan cmd=optimize:clear
